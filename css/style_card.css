@@ -1,0 +1,132 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    min-width: 375px;
+
+}
+main{
+    width: 375px;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+}
+.main__img{
+    margin: 0;
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.img__hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+}
+.icon3{
+    margin: auto;
+}
+h1{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+p span{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+p span:first-of-type{
+    float: left;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+p span:last-of-type{
+    float: right;
+}
+.icon{
+    position: relative;
+    top: .1em;
+    margin-right: .3em;
+}
+
+hr{
+    clear: both;
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+.avatar{
+    display: inline-block;
+    max-width: 10%;
+    border: 2px solid white;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 1rem;
+    position: relative;
+    top: -.2em;
+}
+.avatar__txt{
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
+main a:first-child div:hover{
+    opacity: 1;
+}
+.link__equilibrium:hover, .link__jules:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution{
+    margin: auto;
+    font-size: .8rem;
+    text-align: center;
+    color: hsl(215, 51%, 70%);
+}
+
+@media (max-width: 500px){
+    main{
+        width: 300px;
+        font-size: .9rem;
+        padding: 1.5rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: .8rem;
+    }
+    .icon{
+        position: relative;
+        top: .2em;
+    }
+}
